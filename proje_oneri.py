@@ -5,13 +5,24 @@ st.set_page_config(page_title="✨ Proje Öneri Sistemi", page_icon="🚀")
 st.title("✨ Proje Öneri Sistemi")
 
 
+language_icons = {
+    "Python": "🔵",  
+    "JavaScript": "🟡", 
+    "Java": "🟤", 
+    "C++": "⚫", 
+    "Ruby": "🔴", 
+    "PHP": "🟣", 
+    "C#": "🟢",
+    "Swift": "🟠"
+}
+
+
 try:
     with open("projects.json", "r", encoding="utf-8") as f:
         projects = json.load(f)
 except FileNotFoundError:
     st.error("Projeler dosyası bulunamadı! Lütfen 'projects.json' dosyasını kontrol edin.")
     projects = []
-
 
 if not projects:
     st.stop()
@@ -52,10 +63,13 @@ for p in projects:
 
 st.subheader(f"🔍 {len(filtered)} proje bulundu:")
 
+
 if filtered:
     for proj in filtered:
         with st.container():
-            st.markdown(f"### {proj['title']}")
+          
+            language_icon = language_icons.get(proj['language'], "⚪")  
+            st.markdown(f"### {language_icon} {proj['title']}")
             st.write(f"**Dil**: {proj['language']} | **Zorluk**: {proj['difficulty']} | **Kategori**: {proj['category']}")
             st.write(f"**Veritabanı**: {proj['database']} | **Durum**: {proj['status']} | {'🌐 Çevrimiçi' if proj['online'] else '💾 Çevrimdışı'}")
             st.write(f"**Açıklama**: {proj['description']}")
@@ -63,4 +77,5 @@ if filtered:
             st.markdown("---")
 else:
     st.info("Filtrelere uygun proje bulunamadı. 😊")
+
 
