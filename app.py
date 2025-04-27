@@ -31,7 +31,6 @@ database = st.sidebar.selectbox("Veritabanı", ["Hepsi"] + databases)
 status = st.sidebar.selectbox("Proje Durumu", statuses)
 category = st.sidebar.selectbox("Proje Kategorisi", categories)
 online_only = st.sidebar.checkbox("Sadece çevrimiçi projeleri göster")
-search_term = st.sidebar.text_input("🔍 Başlık veya açıklamada ara")
 
 
 filtered = []
@@ -47,8 +46,6 @@ for p in projects:
     if category != "Hepsi" and p["category"] != category:
         continue
     if online_only and not p["online"]:
-        continue
-    if search_term and search_term.lower() not in (p["title"] + p["description"]).lower():
         continue
     filtered.append(p)
 
@@ -66,3 +63,4 @@ if filtered:
             st.markdown("---")
 else:
     st.info("Filtrelere uygun proje bulunamadı. 😊")
+
