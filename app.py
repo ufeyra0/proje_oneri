@@ -1,7 +1,7 @@
 import streamlit as st
 import json
 
-st.set_page_config(page_title="📌 Proje Öneri Sistemi", page_icon="📌")
+st.set_page_config(page_title="📌 Proje Öneri Sistemi", page_icon="🚀")
 st.title("📌 Proje Öneri Sistemi")
 
 # JSON'dan projeleri yükle
