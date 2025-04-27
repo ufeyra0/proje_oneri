@@ -1,0 +1,318 @@
+[
+   
+    {
+      "title": "Hızlı Blog Sitesi Geliştirme (JavaScript & Firebase)",
+      "language": "JavaScript",
+      "difficulty": "Kolay",
+      "online": true,
+      "database": "Firebase",
+      "status": "Tamamlandı",
+      "category": "Web",
+      "description": "Blog yazıları oluşturulabilen basit bir site, kullanıcıların yazı paylaşabileceği bir platform.",
+      "link": "https://github.com/mustafasaglam/MvcBlog"
+    },
+    {
+      "title": "Offline Stok Takip Sistemi (Python & MySQL)",
+      "language": "Python",
+      "difficulty": "Zor",
+      "online": false,
+      "database": "MySQL",
+      "status": "Başlandı",
+      "category": "Web",
+      "description": "Bir mağaza için offline stok takip sistemi, ürünlerin takibini yapabilir ve raporlar alabilirsiniz.",
+      "link": "https://github.com/Emirhandgc/StokTakipSistemi"
+    },
+   
+    {
+      "title": "Yapay Zeka Tabanlı Öneri Sistemi (Python & MongoDB)",
+      "language": "Python",
+      "difficulty": "Zor",
+      "online": true,
+      "database": "MongoDB",
+      "status": "Başlandı",
+      "category": "Yapay Zeka",
+      "description": "Yapay zeka tabanlı öneri sistemi, kullanıcılara tercihlerine göre ürün veya içerik önerileri sunar.",
+      "link": "https://github.com/ElifNurHalat1/Film-Tavsiye-Sistemi"
+    },
+    {
+      "title": "Çapraz Platform Mobil Uygulama",
+      "language": "C#",
+      "difficulty": "Orta",
+      "online": true,
+      "database": "Firebase",
+      "status": "Devam Ediyor",
+      "category": "Mobil",
+      "description": "Android için çapraz platform mobil uygulama, kullanıcılara kolay erişim sağlanacak.",
+      "link": "https://github.com/Ucnekb/MauiMypp"
+    },
+    {
+      "title": "3D Oyun Geliştirme (Unity & C#)",
+      "language": "C#",
+      "difficulty": "Zor",
+      "online": true,
+      "database": "Unity",
+      "status": "Tamamlandı",
+      "category": "Oyun Geliştirme",
+      "description": "3D bir oyun geliştirilmesi, oyun motoru olarak Unity kullanılacak ve oyunculara etkileşimli bir deneyim sunulacak.",
+      "link": "https://github.com/electusali/3D-Beginner"
+    },
+    {
+      "title": "Kullanıcı Yönetim Sistemi (Java & MySQL)",
+      "language": "Java",
+      "difficulty": "Orta",
+      "online": true,
+      "database": "MySQL",
+      "status": "Devam Ediyor",
+      "category": "Web",
+      "description": "Kullanıcı yönetimi,derneklerin üye yönetimini kolaylaştırmak.",
+      "link": "https://github.com/bugratr/dernek-yonetim-sistemi"
+    },
+    {
+      "title": "E-Ticaret Sitesi (PHP & MySQL)",
+      "language": "PHP",
+      "difficulty": "Zor",
+      "online": true,
+      "database": "MySQL",
+      "status": "Tamamlandı",
+      "category": "Web",
+      "description": "Bir e-ticaret sitesi kurulması, ürünler eklenmesi ve ödeme entegrasyonları yapılması.",
+      "link": "https://github.com/kemalduran/Ayakkabi-Dukkani-E-Ticaret"
+    },
+    {
+      "title": "Sosyal Medya Uygulaması ",
+      "language": "JavaScript",
+      "difficulty": "Zor",
+      "online": true,
+      "database": "Firebase",
+      "status": "Başlandı",
+      "category": "Mobil",
+      "description": "Bir sosyal medya uygulaması geliştirilmesi, kullanıcıların içerik paylaşması ve etkileşime girmesi.",
+      "link": "https://github.com/Salihhhhh/sosyal-medya-uygulamasi"
+    },
+    {
+      "title": "Emlak Yönetim Sistemi ",
+      "language": "Dart (Flutter)",
+      "difficulty": "Orta",
+      "online": true,
+      "database": "PostgreSQL",
+      "status": "Devam Ediyor",
+      "category": "Web",
+      "description": "Emlak ofisleri için bir yönetim sistemi, gayrimenkul listeleme, satış takibi ve kullanıcı yönetimi.",
+      "link": "https://github.com/serondev/cepofis-emlak-yonetimi"
+    },
+    {
+      "title": "Hava Durumu Uygulaması (JavaScript & OpenWeather API)",
+      "language": "JavaScript",
+      "difficulty": "Kolay",
+      "online": true,
+      "database": "None",
+      "status": "Tamamlandı",
+      "category": "Web",
+      "description": "Hava durumu bilgilerini kullanıcıya sağlayan basit bir uygulama.",
+      "link": "https://github.com/berkinoktay/weather-forecast-app"
+    },
+    {
+      "title": "Hedef Takip Uygulaması ",
+      "language": "JavaScript",
+      "difficulty": "Orta",
+      "online": false,
+      "database": "CoreData",
+      "status": "Devam Ediyor",
+      "category": "Mobil",
+      "description": "Kullanıcıların hedeflerini takip edebileceği bir mobil uygulama.",
+      "link": "https://github.com/ahmettaha123/notefav"
+    },
+    {
+      "title": "Online Sınav Sistemi",
+      "language": "Ruby",
+      "difficulty": "Orta",
+      "online": true,
+      "database": "SQLite",
+      "status": "Başlandı",
+      "category": "Web",
+      "description": "Online sınav yapma ve değerlendirme sisteminin oluşturulması.",
+      "link": "https://github.com/bsaral/exam"
+    },
+    {
+      "title": "Çevrimiçi Eğitim Platformu ",
+      "language": "Python",
+      "difficulty": "Zor",
+      "online": true,
+      "database": "MySQL",
+      "status": "Başlandı",
+      "category": "Web",
+      "description": "Öğretmenlerin ders yükleyebileceği ve öğrencilerin bu derslere katılabileceği bir platform.",
+      "link": "https://github.com/Enesfurkandogan71/E-itim-Materyali-Payla-m-Platformu"
+    },
+  
+      {
+        "title": "Kapsamlı Kullanıcı Yönetim Sistemi",
+        "language": "C#",
+        "difficulty": "Zor",
+        "online": true,
+        "database": "MySQL",
+        "status": "Devam Ediyor",
+        "category": "Web Uygulaması",
+        "description": " Kullanıcı yönetim sistemi. Kullanıcı kayıtları, oturum açma, şifre sıfırlama ve kullanıcı rollerini yönetme.",
+        "link": "https://github.com/altaygokmn/Otel-Rezervasyon-Projesi"
+      },
+      {
+        "title": "Akıllı Sözleşme (Solidity & Ethereum)",
+        "language": "Solidity",
+        "difficulty": "Orta",
+        "online": true,
+        "database": "Ethereum",
+        "status": "Devam Ediyor",
+        "category": "Blockchain",
+        "description": "Ethereum blockchain üzerinde, Solidity ile yazılmış akıllı sözleşme örneği. Kullanıcılar token alıp satabilir, sözleşme ile etkileşimde bulunabilir.",
+        "link": "https://github.com/silagizemsemerci/Odev1-Notlarim"
+      },
+      {
+        "title": "E-Ticaret Web Uygulaması (PHP & MySQL)",
+        "language": "PHP",
+        "difficulty": "Orta",
+        "online": true,
+        "database": "MySQL",
+        "status": "Devam Ediyor",
+        "category": "E-Ticaret",
+        "description": "PHP ve MySQL kullanarak bir e-ticaret platformu oluşturma. Ürün listeleme, sepete ürün ekleme, ödeme sistemi entegrasyonu gibi özellikler içerir.",
+        "link": "https://github.com/yasinozlu/E-Ticaret-PHP"
+      },
+      {
+        "title": "Basit Görev Listesi Uygulaması",
+        "language": "Swift",
+        "difficulty": "Kolay",
+        "online": false,
+        "database": "None",
+        "status": "Tamamlandı",
+        "category": "Mobil Uygulama",
+        "description": " Kullanıcıların günlük görevlerini ekleyebileceği, düzenleyebileceği ve silebileceği basit bir görev listesi uygulaması.",
+        "link": "https://github.com/MRSgkce/ToDoList"
+      },
+      {
+        "title": "Basit Hesap Makinesi Uygulaması (Flutter)",
+        "language": "Flutter",
+        "difficulty": "Kolay",
+        "online": false,
+        "database": "None",
+        "status": "Tamamlandı",
+        "category": "Mobil Uygulama",
+        "description": "Flutter kullanarak, toplama, çıkarma, çarpma ve bölme işlemleri yapabilen basit bir hesap makinesi uygulaması.",
+        "link": "https://github.com/sefakkurt06/basithesapmakinesi"
+      },
+      {
+        "title": "Basit Hesap Makinesi (Python)",
+        "language": "Python",
+        "difficulty": "Kolay",
+        "online": false,
+        "database": "None",
+        "status": "Tamamlandı",
+        "category": "Masaüstü Uygulaması",
+        "description": "Python kullanarak, toplama, çıkarma, çarpma ve bölme işlemleri yapabilen basit bir hesap makinesi uygulaması.",
+        "link": "https://github.com/buraakx0/python-hesap-makinesi"
+      },
+      {
+        "title": "Basit Not Defteri Uygulaması",
+        "language": "Python",
+        "difficulty": "Kolay",
+        "online": false,
+        "database": "None",
+        "status": "Tamamlandı",
+        "category": "Masaüstü Uygulaması",
+        "description": " Basit bir not defteri uygulaması geliştirme. Kullanıcı metin ekleyebilir, kaydedebilir ve düzenleyebilir.",
+        "link": "https://github.com/kopsis-net/notdefteri"
+      },
+      {
+        "title": "Basit Not Defteri Uygulaması",
+        "language": "C#",
+        "difficulty": "Kolay",
+        "online": false,
+        "database": "None",
+        "status": "Tamamlandı",
+        "category": "Mobil Uygulama",
+        "description": "Kullanıcıların not ekleyip kaydedebileceği basit bir not defteri uygulaması.",
+        "link": "https://github.com/EYK-Code/NotDefteri"
+      },
+      {
+        "title": "Metin Sınıflandırma (Python & Scikit-Learn)",
+        "language": "Python",
+        "difficulty": "Orta",
+        "online": true,
+        "database": "None",
+        "status": "Devam Ediyor",
+        "category": "Yapay Zeka",
+        "description": "Python ve Scikit-Learn kullanarak, metinleri sınıflandırmak için bir yapay zeka modeli geliştirme. Örneğin, haber makalelerini kategorilere ayırma.",
+        "link": "https://github.com/AbdullahAkkaya/dogaldilisleme-1"
+      },
+      {
+        "title": "Konuşma Tanıma (Python & SpeechRecognition)",
+        "language": "Python",
+        "difficulty": "Orta",
+        "online": true,
+        "database": "None",
+        "status": "Devam Ediyor",
+        "category": "Yapay Zeka",
+        "description": "Python ve SpeechRecognition kullanarak, sesli komutları algılayıp işlem yapabilen bir yapay zeka uygulaması geliştirme.",
+        "link": "https://github.com/ttufekci/PythonSpeechRecognizer"
+      },
+      {
+        "title": "Öneri Sistemi (Python & Pandas)",
+        "language": "Python",
+        "difficulty": "Orta",
+        "online": true,
+        "database": "None",
+        "status": "Devam Ediyor",
+        "category": "Yapay Zeka",
+        "description": "Kullanıcıların önceki tercihlerine dayalı olarak önerilerde bulunan bir yapay zeka öneri sistemi geliştirme.",
+        "link": "https://github.com/keremkarayaz/Kitap-Oneri-Sistemi"
+      },
+      {
+        "title": "Yüz Tanıma (Python & OpenCV)",
+        "language": "Python",
+        "difficulty": "Zor",
+        "online": true,
+        "database": "None",
+        "status": "Devam Ediyor",
+        "category": "Yapay Zeka",
+        "description": "Python ve OpenCV kullanarak, yüz tanıma işlemi gerçekleştiren bir yapay zeka uygulaması geliştirme.",
+        "link": "https://github.com/mustafadalga/OpenCV-Yuz-ve-Goz-Tanima-Islemleri"
+      },
+      {
+        "title": "Sohbet Botu (Python & NLTK)",
+        "language": "Python",
+        "difficulty": "Orta",
+        "online": true,
+        "database": "None",
+        "status": "Devam Ediyor",
+        "category": "Yapay Zeka",
+        "description": "Python ve NLTK kullanarak bir sohbet botu geliştirme. Bot, kullanıcılardan gelen mesajlara anlamlı yanıtlar verebilir.",
+        "link": "https://github.com/burakizm/vcbotplus"
+      },
+      {
+        "title": "Görüntü Tanıma Uygulaması (Python & TensorFlow)",
+        "language": "Python",
+        "difficulty": "Zor",
+        "online": true,
+        "database": "None",
+        "status": "Devam Ediyor",
+        "category": "Yapay Zeka",
+        "description": "Python ve TensorFlow kullanarak, görüntüleri tanıyan bir yapay zeka modeli geliştirme. Model, nesne tanıma ve sınıflandırma işlemleri yapabilir.",
+        "link": "https://github.com/ozancakar/voice-and-handtracking"
+      },
+      {
+        "title": "İş Başvuru Takip Paneli (Python & SQLite)",
+        "language": "Python",
+        "difficulty": "Orta",
+        "online": true,
+        "database": "SQLite",
+        "status": "Devam Ediyor",
+        "category": "Web",
+        "description": "Bir iş başvuru takip sistemi oluşturulacak. Başvuruları izleyebilir ve analiz edebilirsiniz.",
+        "link": "https://github.com/example/basvuru-takip"
+      }
+      
+
+      
+      
+  ]
+  
