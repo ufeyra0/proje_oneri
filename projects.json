@@ -309,6 +309,17 @@
         "category": "Web",
         "description": "Bir iş başvuru takip sistemi oluşturulacak. Başvuruları izleyebilir ve analiz edebilirsiniz.",
         "link": "https://github.com/example/basvuru-takip"
+      },
+      {
+        "title": "Basit Sohbet Uygulaması",
+        "language": "JavaScript",
+        "difficulty": "Kolay",
+        "online": true,
+        "database": "Yok",
+        "status": "Tamamlandı",
+        "category": "Mobil Uygulama",
+        "description": "AngularJs asp.net mvc ve signalr kullanarak basit bir sohbet uygulaması",
+        "link": "https://github.com/serifselen/basit-whatsapp-uygulamasi"
       }
       
 
