@@ -55,7 +55,7 @@ for p in projects:
     filtered.append(p)
 
 
-st.subheader(f"🔍 {len(filtered)} proje bulundu:")
+
 
 if filtered:
     for proj in filtered:
