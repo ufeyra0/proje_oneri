@@ -320,7 +320,53 @@
         "category": "Mobil Uygulama",
         "description": "AngularJs asp.net mvc ve signalr kullanarak basit bir sohbet uygulaması",
         "link": "https://github.com/serifselen/basit-whatsapp-uygulamasi"
+      },
+     {
+        "title": "Basit E-Okul Uygulaması",
+        "language": "C#",
+        "difficulty": "Kolay",
+        "online": true,
+        "database": "None",
+        "status": "Tamamlandı",
+        "category": "Mobil Uygulama",
+        "description": "C# ile basit e-okul uygulaması",
+        "link": "https://github.com/yigitarpacioglu/BasitEokulUygulamas-"
+      },
+     {
+        "title": "Sipariş Takip Uygulaması",
+        "language": "python",
+        "difficulty": "Kolay",
+        "online": true,
+        "database": "None",
+        "status": "Tamamlandı",
+        "category": "Mobil Uygulama",
+        "description": "Python ile sipariş takip uygulaması.",
+        "link": "https://github.com/sh3rly13/siparisTakipUygulamasi"
+      },
+     {
+        "title": "Kura Çekme Uygulaması",
+        "language": "JavaScript",
+        "difficulty": "Kolay",
+        "online": true,
+        "database": "None",
+        "status": "Tamamlandı",
+        "category": "Mobil Uygulama",
+        "description": "JavaScript ve CSS ile basit bir kura çekme uygulaması",
+        "link": "https://github.com/enespolat25/kura-cekelim"
+      } ,
+     {
+        "title": "Basit Bankamatik Uygulaması",
+        "language": "python",
+        "difficulty": "Kolay",
+        "online": true,
+        "database": "None",
+        "status": "Tamamlandı",
+        "category": "None",
+        "description": "Python basit bankamatik uygulaması",
+        "link": "https://github.com/muhammeterdagi35/Python-basit-bankamatik-uygulamasi"
       }
+      
+      
       
 
       
