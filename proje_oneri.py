@@ -12,14 +12,16 @@ except FileNotFoundError:
     st.error("Projeler dosyası bulunamadı! Lütfen 'projects.json' dosyasını kontrol edin.")
     projects = []
 
-
 if not projects:
     st.stop()
 
 
 languages = sorted(set(p["language"] for p in projects))
 difficulties = sorted(set(p["difficulty"] for p in projects))
-databases = sorted(set(p["database"] for p in projects))
+
+
+databases = sorted(set(p["database"] if p["database"] else "Yok" for p in projects))
+
 statuses = ["Hepsi", "Başlandı", "Tamamlandı", "Devam Ediyor"]
 categories = ["Hepsi", "Web", "Mobil", "Veri Bilimi", "Yapay Zeka", "Oyun Geliştirme", "Blockchain"]
 
@@ -39,8 +41,11 @@ for p in projects:
         continue
     if difficulty != "Hepsi" and p["difficulty"] != difficulty:
         continue
-    if database != "Hepsi" and p["database"] != database:
-        continue
+    if database != "Hepsi":
+        if database == "Yok" and p["database"]:
+            continue
+        elif database != "Yok" and p["database"] != database:
+            continue
     if status != "Hepsi" and p["status"] != status:
         continue
     if category != "Hepsi" and p["category"] != category:
@@ -57,10 +62,11 @@ if filtered:
         with st.container():
             st.markdown(f"### {proj['title']}")
             st.write(f"**Dil**: {proj['language']} | **Zorluk**: {proj['difficulty']} | **Kategori**: {proj['category']}")
-            st.write(f"**Veritabanı**: {proj['database']} | **Durum**: {proj['status']} | {'🌐 Çevrimiçi' if proj['online'] else '💾 Çevrimdışı'}")
+            st.write(f"**Veritabanı**: {proj['database'] if proj['database'] else 'Yok'} | **Durum**: {proj['status']} | {'🌐 Çevrimiçi' if proj['online'] else '💾 Çevrimdışı'}")
             st.write(f"**Açıklama**: {proj['description']}")
             st.markdown(f"[🔗 Projeye Git]({proj['link']})")
             st.markdown("---")
 else:
     st.info("Filtrelere uygun proje bulunamadı. 😊")
+
 
