@@ -315,7 +315,7 @@
         "language": "JavaScript",
         "difficulty": "Kolay",
         "online": true,
-        "database": "Yok",
+        "database": "None",
         "status": "Tamamlandı",
         "category": "Mobil Uygulama",
         "description": "AngularJs asp.net mvc ve signalr kullanarak basit bir sohbet uygulaması",
