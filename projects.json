@@ -364,6 +364,28 @@
         "category": "None",
         "description": "Python basit bankamatik uygulaması",
         "link": "https://github.com/muhammeterdagi35/Python-basit-bankamatik-uygulamasi"
+      },
+   {
+        "title": "Basit Otel Uygulaması",
+        "language": "C#",
+        "difficulty": "Kolay",
+        "online": true,
+        "database": "MySQL",
+        "status": "Tamamlandı",
+        "category": "None",
+        "description": "C# dili kullanılarak geliştirilmiş basit bir otel otomasyonu.",
+        "link": "https://github.com/YahyaSevinc/Otel-Otomasyonu-Uygulamasi"
+      },
+     {
+        "title": "Telefon Rehberi Uygulaması",
+        "language": "Java",
+        "difficulty": "Kolay",
+        "online": true,
+        "database": "MySQL",
+        "status": "Tamamlandı",
+        "category": "Mobil Uygulama",
+        "description": "Java ve SQLite teknolojisi kullanılarak basit bir telefon rehberi uygulaması.",
+        "link": "https://github.com/etokoc/basitRehberUygulamasi"
       }
       
       
