@@ -4,67 +4,61 @@ import json
 st.set_page_config(page_title="✨ Proje Öneri Sistemi", page_icon="🚀")
 st.title("✨ Proje Öneri Sistemi")
 
-
 try:
-    with open("projects.json", "r", encoding="utf-8") as f:
-        projects = json.load(f)
+    with open("projects.json", "r", encoding="utf-8") as dosya:
+        projeler = json.load(dosya)
 except FileNotFoundError:
     st.error("Projeler dosyası bulunamadı! Lütfen 'projects.json' dosyasını kontrol edin.")
-    projects = []
+    projeler = []
 
-if not projects:
+if not projeler:
     st.stop()
 
-
-languages = sorted(set(p["language"] for p in projects))
-difficulties = sorted(set(p["difficulty"] for p in projects))
-
-
-databases = sorted(set(p["database"] if p["database"] else "Yok" for p in projects))
-
-statuses = ["Hepsi", "Başlandı", "Tamamlandı", "Devam Ediyor"]
-categories = ["Hepsi", "Web", "Mobil", "Veri Bilimi", "Yapay Zeka", "Oyun Geliştirme", "Blockchain"]
-
+diller = sorted(set(p["language"] for p in projeler))
+zorluklar = sorted(set(p["difficulty"] for p in projeler))
+veritabanlari = sorted(set(p["database"] if p["database"] else "Yok" for p in projeler))
+durumlar = ["Hepsi", "Başlandı", "Tamamlandı", "Devam Ediyor"]
+kategoriler = sorted(set(p["category"] for p in projeler))
+kategoriler = ["Hepsi"] + kategoriler
 
 st.sidebar.header("🔎 Filtreleme Seçenekleri")
-language = st.sidebar.selectbox("Programlama Dili", ["Hepsi"] + languages)
-difficulty = st.sidebar.selectbox("Zorluk Seviyesi", ["Hepsi"] + difficulties)
-database = st.sidebar.selectbox("Veritabanı", ["Hepsi"] + databases)
-status = st.sidebar.selectbox("Proje Durumu", statuses)
-category = st.sidebar.selectbox("Proje Kategorisi", categories)
-online_only = st.sidebar.checkbox("Sadece çevrimiçi projeleri göster")
+secili_dil = st.sidebar.selectbox("Programlama Dili", ["Hepsi"] + diller)
+secili_zorluk = st.sidebar.selectbox("Zorluk Seviyesi", ["Hepsi"] + zorluklar)
+secili_veritabani = st.sidebar.selectbox("Veritabanı", ["Hepsi"] + veritabanlari)
+secili_durum = st.sidebar.selectbox("Proje Durumu", durumlar)
+secili_kategori = st.sidebar.selectbox("Proje Kategorisi", kategoriler)
+sadece_cevrimici = st.sidebar.checkbox("Sadece çevrimiçi projeleri göster")
 
+def filtrele(proje):
+    if secili_dil != "Hepsi" and proje["language"] != secili_dil:
+        return False
+    if secili_zorluk != "Hepsi" and proje["difficulty"] != secili_zorluk:
+        return False
+    if secili_veritabani != "Hepsi":
+        if secili_veritabani == "Yok" and proje["database"]:
+            return False
+        elif secili_veritabani != "Yok" and proje["database"] != secili_veritabani:
+            return False
+    if secili_durum != "Hepsi" and proje["status"] != secili_durum:
+        return False
+    if secili_kategori != "Hepsi" and proje["category"] != secili_kategori:
+        return False
+    if sadece_cevrimici and not proje["online"]:
+        return False
+    return True
 
-filtered = []
-for p in projects:
-    if language != "Hepsi" and p["language"] != language:
-        continue
-    if difficulty != "Hepsi" and p["difficulty"] != difficulty:
-        continue
-    if database != "Hepsi":
-        if database == "Yok" and p["database"]:
-            continue
-        elif database != "Yok" and p["database"] != database:
-            continue
-    if status != "Hepsi" and p["status"] != status:
-        continue
-    if category != "Hepsi" and p["category"] != category:
-        continue
-    if online_only and not p["online"]:
-        continue
-    filtered.append(p)
+filtrelenmis_projeler = list(filter(filtrele, projeler))
 
+st.subheader(f"🔍 {len(filtrelenmis_projeler)} proje bulundu:")
 
-st.subheader(f"🔍 {len(filtered)} proje bulundu:")
-
-if filtered:
-    for proj in filtered:
+if filtrelenmis_projeler:
+    for proje in filtrelenmis_projeler:
         with st.container():
-            st.markdown(f"### {proj['title']}")
-            st.write(f"**Dil**: {proj['language']} | **Zorluk**: {proj['difficulty']} | **Kategori**: {proj['category']}")
-            st.write(f"**Veritabanı**: {proj['database'] if proj['database'] else 'Yok'} | **Durum**: {proj['status']} | {'🌐 Çevrimiçi' if proj['online'] else '💾 Çevrimdışı'}")
-            st.write(f"**Açıklama**: {proj['description']}")
-            st.markdown(f"[🔗 Projeye Git]({proj['link']})")
+            st.markdown(f"### {proje['title']}")
+            st.write(f"**Dil**: {proje['language']} | **Zorluk**: {proje['difficulty']} | **Kategori**: {proje['category']}")
+            st.write(f"**Veritabanı**: {proje['database'] if proje['database'] else 'Yok'} | **Durum**: {proje['status']} | {'🌐 Çevrimiçi' if proje['online'] else '💾 Çevrimdışı'}")
+            st.write(f"**Açıklama**: {proje['description']}")
+            st.markdown(f"[🔗 Projeye Git]({proje['link']})")
             st.markdown("---")
 else:
     st.info("Filtrelere uygun proje bulunamadı. 😊")
